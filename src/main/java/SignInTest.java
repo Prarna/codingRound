@@ -7,12 +7,14 @@ import org.testng.annotations.Test;
 
 public class SignInTest {
 
-    WebDriver driver = new ChromeDriver();
+   
+    
 
     @Test
     public void shouldThrowAnErrorIfSignInDetailsAreMissing() {
 
         setDriverPath();
+        WebDriver driver = new ChromeDriver();
 
         driver.get("https://www.cleartrip.com/");
         waitFor(2000);
